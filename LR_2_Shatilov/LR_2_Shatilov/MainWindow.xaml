@@ -1,0 +1,19 @@
+﻿<Window x:Class="LR_2_Shatilov.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LR_2_Shatilov"
+        mc:Ignorable="d"
+        Title="Учет посещений йога-центра" Height="450" Width="1000" FontFamily="Microsoft Sans Serif">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Canvas Background="#FFC6FFDE"/>
+        <TextBlock Text="Учет посещений" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="38"/>
+        <Button x:Name="BackBtn" Style="{StaticResource mainBtn}" Content="Назад" IsCancel="True" HorizontalAlignment="Right" Margin="15" Click="BackBtn_Click"/>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Row="2" ContentRendered="MainFrame_ContentRendered"/>
+    </Grid>
+</Window>
